@@ -14,9 +14,7 @@
 # default value.
 
 #Port 22
-<% @sshd_config_port_array.each do |p| -%>
-<%= "Port #{p}" %>
-<% end -%>
+Port <%= @sshd_config_port %>
 #Protocol 2,1
 Protocol 2
 <% if @sshd_addressfamily_real != nil -%>
