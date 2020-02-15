@@ -40,10 +40,7 @@ HostKey <%= hostkey %>
 
 # Lifetime and size of ephemeral version 1 server key
 #KeyRegenerationInterval 1h
-#ServerKeyBits 1024
-<% if @sshd_config_serverkeybits_real != nil -%>
-ServerKeyBits <%= @sshd_config_serverkeybits_real %>
-<% end -%>
+#ServerKeyBits 1024 #deprecated!!!
 # Logging
 # obsoletes QuietMode and FascistLogging
 #SyslogFacility AUTH
